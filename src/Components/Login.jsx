@@ -94,6 +94,7 @@ export default function Login() {
                                 backgroundColor: "#c4dbF6",
                                 borderRadius: "25px"
                             }}
+                            className="loginbtnhead"
                         >
                             Login
                         </button>
@@ -111,6 +112,8 @@ export default function Login() {
                             backgroundColor: "#c4dbF6",
                             borderRadius: "25px"
                         }}
+
+                        className="loginbtnhead"
                     >
                         Register
                     </button>

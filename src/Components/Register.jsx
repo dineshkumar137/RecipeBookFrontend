@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import bgImage from '../assets/loginbackground.jpg';
 import { useNavigate } from "react-router-dom";
+import "../Components/Login.css"
 
 export default function Register() {
     const navigate = useNavigate();
@@ -80,13 +81,13 @@ export default function Register() {
                     </table>
                     <div style={{ marginTop: '10px' , marginLeft:"35%"}}>
                         <button type="submit" style={{ height:"30px", width:"70px" , 
-                        border:"none", backgroundColor:"#c4dbF6", borderRadius:"25px"}}>Register</button>
+                        border:"none", backgroundColor:"#c4dbF6", borderRadius:"25px"}} className="loginbtnhead">Register</button>
                     </div>
                 </form>
                 <div>
                     <h5 style={{marginRight:"15px"}}>Already registered?</h5>
                     <button onClick={() => navigate('/Login')} style={{  marginLeft:"17%", height:"30px", width:"70px" , 
-                        border:"none", backgroundColor:"#c4dbF6", borderRadius:"25px"}} >Login</button>
+                        border:"none", backgroundColor:"#c4dbF6", borderRadius:"25px"}} className="loginbtnhead" >Login</button>
                 </div>
             </div>
         </div>

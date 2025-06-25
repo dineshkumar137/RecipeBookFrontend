@@ -47,7 +47,6 @@
   opacity: 1;
 }
 
-
 @media (max-width: 768px) {
   #gridcontainer {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

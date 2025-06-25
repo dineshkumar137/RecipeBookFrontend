@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import savelogo from "../assets/bookmark.png";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
-import { sampleDishes } from "../data"; // make sure this includes `tags` per dish
-import { useUser } from "../contexts/userContext"; // context for login state
+import { sampleDishes } from "../data"; 
+import { useUser } from "../contexts/userContext"; 
 
 export default function Header() {
   const { user, logout } = useUser();

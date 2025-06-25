@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-/* Mobile styles */
+
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -80,8 +80,8 @@
 
 .floating-dropdown {
   position: absolute;
-  top: 100px; 
-  left: 48.5%;
+  top: 77px; 
+  left: 47.1%;
   transform: translateX(-50%);
   width: 500px;
   max-height: 250px;

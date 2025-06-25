@@ -7,7 +7,7 @@ import { useUser } from "../contexts/userContext";
 
 export default function Login() {
     const navigate = useNavigate();
-    const { setUser } = useUser(); // Access context
+    const { setUser } = useUser(); 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -29,7 +29,7 @@ export default function Login() {
 
             if (response.ok) {
                 console.log('Login successful', data);
-                setUser({ email: data.email }); // Set user in context
+                setUser({ email: data.email }); 
                 navigate('/');
             } else {
                 alert(data.message);

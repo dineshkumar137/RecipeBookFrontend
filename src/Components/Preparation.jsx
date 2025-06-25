@@ -5,13 +5,13 @@ export default function Preparation() {
   const { state: dish } = useLocation();
   const navigate = useNavigate();
 
-  // Helper: Get logged in user
+  
   const getLoggedInUser = () => {
     const user = localStorage.getItem("user");
     return user ? JSON.parse(user) : null;
   };
 
-  // Helper: Save recipe per user
+ 
   const handleSave = () => {
     const user = getLoggedInUser();
 
@@ -24,10 +24,10 @@ export default function Preparation() {
     const allSaved = JSON.parse(localStorage.getItem("savedRecipes")) || {};
     const userEmail = user.email;
 
-    // Get current user's saved recipes or empty array
+    
     const userSaved = allSaved[userEmail] || [];
 
-    // Check if recipe already saved
+ 
     const alreadySaved = userSaved.some((item) => item.name === dish.name);
 
     if (alreadySaved) {

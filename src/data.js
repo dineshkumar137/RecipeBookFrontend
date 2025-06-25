@@ -2,6 +2,8 @@ import paneer from './assets/Paneer.jpg';
 import briyani from './assets/briyani.jpg';
 import icec from './assets/icec.jpg';
 import jamun from './assets/jamun.jpg';
+import frice from "./assets/frice.jpg";
+import dosa from "./assets/dosa.jpg";
 
 export const sampleDishes = [
   {
@@ -35,5 +37,21 @@ export const sampleDishes = [
     steps: "Layer rice and curry, cook on dum.",
     tips: "Soak rice 30 mins before cooking.",
     tags: ["main", "spicy"]
-  }
+  },
+  {
+      name: "Fried Rice",
+      image: frice,
+      ingredients: "Rice, Veggies, Soy Sauce, Oil",
+      steps: "Stir-fry veggies, add rice, toss with sauces.",
+      tips: "Use cold rice for best results.",
+      tags: ["rice", "quick"]
+    },
+    {
+        name: "Dosa",
+        image: dosa,
+        ingredients: "Rice, Urad Dal, Oil",
+        steps: "Ferment batter, spread on pan, cook crisp.",
+        tips: "Use cast iron pan for best crispiness.",
+        tags: ["breakfast", "crispy"]
+    }
 ];

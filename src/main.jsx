@@ -10,6 +10,9 @@ import Header from './Components/Header.jsx'
 import Preparation from './Components/Preparation.jsx'
 import Saved from './Components/Save.jsx'
 import { UserProvider } from './contexts/userContext.jsx';
+import Create from './Components/Create.jsx';
+import Myrecipe from './Components/Myrecipe.jsx'
+import Update from './Components/Update.jsx'
 
 const router = createBrowserRouter(
   [
@@ -32,6 +35,18 @@ const router = createBrowserRouter(
     {
       path:"/Saved",
       Component:Saved
+    },
+    {
+      path:"/Create",
+      Component:Create
+    },
+    {
+      path:"/Myrecipe",
+      Component:Myrecipe
+    },
+    {
+      path:"/Update",
+      Component:Update
     }
   ]
 )

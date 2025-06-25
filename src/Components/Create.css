@@ -1,0 +1,80 @@
+
+
+.create-container table {
+  margin: 0 auto; /* center table horizontally */
+}
+
+.create-container label {
+  font-size: 18px;
+  
+  padding-right: 15px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+.create-container input[type="text"],
+.create-container input[type="file"],
+.create-container textarea {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+    margin: 3px;
+  border: 1px solid #bbb;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.create-container textarea {
+  height: auto;
+  min-height: 50px;
+  resize: vertical;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.create-container button {
+  background-color: #c4dbF6;
+  color: white;
+  padding: 15px 0;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 30%;
+  margin: 20px auto 0;
+  margin-bottom: 20px;
+  display: block; 
+  transition: background-color 0.3s ease;
+}
+
+.create-container button:hover {
+  background-color: #4e5d9d;
+}
+
+.create-container button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#subdivofpage{
+    background-color: rgba(255, 255, 255, 0.9);
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  min-width: 600px;
+  min-height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#updatecreatebtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    transition: 0.3s;
+}

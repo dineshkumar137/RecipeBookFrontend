@@ -1,0 +1,61 @@
+#gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: repeat(3, 1fr);   
+  gap: 0;                                
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;                        
+  background-color: #fdfdfd;
+}
+
+.dish-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #c4dbF6;              
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.dish-card:hover {
+  transform: scale(1.03);               
+  z-index: 1;
+}
+
+.dish-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dish-card:hover .overlay {
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  #gridcontainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: auto;
+    height: auto;
+  }
+
+  .dish-card img {
+    height: 180px;
+  }
+}

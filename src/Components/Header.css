@@ -1,0 +1,115 @@
+#navibar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c4dbF6;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    padding: 10px 20px;
+}
+
+.navimagesave{
+    height: 40px;
+    width : 40px;
+}
+
+.navisearch{
+    width: 500px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.navisearch:hover{
+    border-radius: 0px;
+    transition: 0.3s;
+}
+
+.navibutton{
+    height: 40px;
+    width: 100px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .nav-items.show {
+    display: flex;
+  }
+
+  .navisearch {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .navibutton {
+    width: 100%;
+    max-width: 200px;
+    
+  }
+
+  .navimagesave {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.floating-dropdown {
+  position: absolute;
+  top: 100px; 
+  left: 48.5%;
+  transform: translateX(-50%);
+  width: 500px;
+  max-height: 250px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  z-index: 1000;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.floating-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.floating-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.floating-dropdown li:hover {
+  background-color: #f5f5f5;
+}
+
+#recipebookhead:hover{
+    color: #f76c6c;
+    transition: 0.5s;
+}

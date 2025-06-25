@@ -103,7 +103,7 @@ export default function Login() {
                 <div>
                     <h3>New user?</h3>
                     <button
-                        onClick={() => navigate('/Register')}
+                        onClick={() => navigate('/register')}
                         style={{
                             marginLeft: "9%",
                             height: "30px",

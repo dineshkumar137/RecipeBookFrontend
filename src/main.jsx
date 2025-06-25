@@ -5,7 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import Login from './Components/Login.jsx'
-import Register from './Components/Register.jsx'
+import register from './Components/Register.jsx'
 import Header from './Components/Header.jsx'
 import Preparation from './Components/Preparation.jsx'
 import Saved from './Components/Save.jsx'
@@ -25,7 +25,7 @@ const router = createBrowserRouter(
       Component : Login
     },
     {
-      path:"/Register",
+      path:"/register",
       Component : Register
     },
     {

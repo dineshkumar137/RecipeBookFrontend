@@ -15,7 +15,7 @@ export default function Register() {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:5000/api/Register', {
+            const response = await fetch('https://recipebook-backend.onrender.com/api/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

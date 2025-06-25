@@ -10,7 +10,6 @@ export default function Preparation() {
     const user = localStorage.getItem("user");
     return user ? JSON.parse(user) : null;
   };
-
  
   const handleSave = () => {
     const user = getLoggedInUser();

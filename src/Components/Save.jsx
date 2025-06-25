@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useUser } from "../contexts/userContext"; // Login context
+import { useUser } from "../contexts/userContext"; 
 
 export default function Save() {
-  const { user } = useUser(); // Context for logged-in user
+  const { user } = useUser(); 
   const [savedDishes, setSavedDishes] = useState([]);
 
   useEffect(() => {

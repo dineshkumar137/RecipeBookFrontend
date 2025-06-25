@@ -82,7 +82,8 @@ export default function Header() {
         </div>
 
         <div>
-          <button className="navibutton" onClick={handleAuthClick} style={{borderRadius:"25px", marginRight:"55px"}}>
+          <button className="navibutton" onClick={handleAuthClick} style={{borderRadius:"25px", 
+            marginRight:"55px", backgroundColor:"#303c6c", color:"white"}}>
             {user ? "Logout" : "Login"}
           </button>
         </div>

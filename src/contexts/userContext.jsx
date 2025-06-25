@@ -5,7 +5,6 @@ const UserContext = createContext();
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  // Load user from localStorage on app start
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
     if (storedUser) {

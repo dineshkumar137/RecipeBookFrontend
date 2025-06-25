@@ -1,5 +1,6 @@
 
 Recipe Book
+
 Frontend:
 	Main page displays the dishes
 Used grid to display all the dishes
@@ -15,6 +16,8 @@ If credentials are correct it takes to Main page.
 	Register page
 Ask the details of new user
 Navigate to log in page
+
+
 Backend:
 	Registration details are stored in mongo db.
 	Login credentials are verified .

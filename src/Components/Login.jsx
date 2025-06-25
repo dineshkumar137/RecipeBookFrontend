@@ -4,6 +4,7 @@ import bgImage from '../assets/loginbackground.jpg';
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../contexts/userContext"; 
 
+
 export default function Login() {
     const navigate = useNavigate();
     const { setUser } = useUser(); // Access context

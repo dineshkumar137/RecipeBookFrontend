@@ -38,7 +38,7 @@ export default function Update() {
     };
 
     try {
-      const res = await fetch(`https://recipebookbackend-nexv.onrender.com/api//api/recipes/${recipe._id}`, {
+      const res = await fetch(`https://recipebookbackend-nexv.onrender.com/api/recipes/${recipe._id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formattedData),

@@ -29,7 +29,7 @@ export default function Myrecipe() {
 
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:5000/api/recipes/${id}`, { method: "DELETE" });
+    await fetch(`https://recipebookbackend-nexv.onrender.com/api/recipes/${id}`, { method: "DELETE" });
     setRecipes((prev) => prev.filter((r) => r._id !== id));
   };
 
@@ -38,14 +38,14 @@ export default function Myrecipe() {
 };
 
   const handleSave = async (id) => {
-    await fetch(`http://localhost:5000/api/recipes/${id}`, {
+    await fetch(`https://recipebookbackend-nexv.onrender.com/api/recipes/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
     });
     setEditId(null);
     // reload recipes
-    const res = await fetch(`http://localhost:5000/api/recipes/${user.email}`);
+    const res = await fetch(`https://recipebookbackend-nexv.onrender.com/api/recipes/${user.email}`);
     const updated = await res.json();
     setRecipes(updated);
   };
@@ -63,10 +63,10 @@ export default function Myrecipe() {
       {Array.isArray(recipes) && recipes.map((recipe) => (
   <div key={recipe._id} className="myrecipe-card">
     {recipe.mediaUrl && recipe.mediaType === "image" && (
-      <img src={`http://localhost:5000/${recipe.mediaUrl}`} alt={recipe.name} />
+      <img src={`https://recipebookbackend-nexv.onrender.com/${recipe.mediaUrl}`} alt={recipe.name} />
     )}
     {recipe.mediaUrl && recipe.mediaType === "video" && (
-      <video src={`http://localhost:5000/${recipe.mediaUrl}`} controls />
+      <video src={`https://recipebookbackend-nexv.onrender.com/${recipe.mediaUrl}`} controls />
     )}
 
     <div className="myrecipe-content">
@@ -75,7 +75,7 @@ export default function Myrecipe() {
       <p><b>Tips:</b> {recipe.tips}</p>
       <p><b>Tags:</b> {recipe.tags.join(", ")}</p>
       <div className="action-buttons">
-        <button onClick={() => handleEdit(recipe)}>✏️</button>
+        <button onClick={() => handleEdit(recipe)}>📝</button>
         <button onClick={() => handleDelete(recipe._id)}>🗑️</button>
       </div>
     </div>

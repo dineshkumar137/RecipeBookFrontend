@@ -14,7 +14,7 @@ export default function Myrecipe() {
   useEffect(() => {
   if (!user || !user.email) return;
 
-  fetch(`https://recipebookbackend-nexv.onrender.com/api//api/recipes/byemail/${user.email}`)
+  fetch(`https://recipebookbackend-nexv.onrender.com/api/recipes/byemail/${user.email}`)
     .then((res) => res.json())
     .then((data) => {
       console.log("Fetched recipes:", data);

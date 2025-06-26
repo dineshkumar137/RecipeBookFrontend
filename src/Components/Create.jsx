@@ -43,7 +43,7 @@ export default function Create() {
     form.append("userEmail", user.email);
 
     try {
-      const res = await fetch("http://localhost:5000/api/recipes", {
+      const res = await fetch("https://recipebookbackend-nexv.onrender.com/api/recipes", {
         method: "POST",
         body: form,
       });
